@@ -1,14 +1,8 @@
-# SeismicWalnutApp|
--------------------
+# SeismicWalnutApp
 
 # Here are the steps how you can interact with Seismic technology on your computer, just follow steps and see how you slightly become a developer.
 
-# For local development you should have this things on your PC. 
-# sforge - testing framework
-# sanvil - local node
-# ssolc - compiler
-
-# Also, some things as Rust, Cargo, Brew, JQ and Bun have to be installed. 
+# For local development you should have this things on your PC. sforge - testing, framework sanvil - local node, ssolc - compiler. Also, some things as Rust, Cargo, Brew, JQ and Bun have to be installed. 
 
 # install rust and cargo.
 curl https://sh.rustup.rs -sSf | sh
@@ -36,17 +30,15 @@ Windows - powershell -c "irm bun.sh/install.ps1 | iex"
 # Check the version of sanvil, sforge and ssolc 
 sanvil --version
 
-# Open you code editor and terminal
-# Create the project folder and navigate into it:
+# Open you code editor and terminal. Create the project folder and navigate into it:
 mkdir walnut-app
 cd walnut-app
 
-# Create the packages  directory with subdirectories for contracts and cli
+# Create the packages directory with subdirectories for contracts and cli
 mkdir -p packages/contracts packages/cli
 
 # Initialize a bun project in the root directory:
 bun init -y && rm index.ts && rm tsconfig.json && touch .prettierrc && touch .gitmodules
-
 
 # Replace the default package.json with the following content for a monorepo setup:
 {
@@ -65,24 +57,18 @@ bun init -y && rm index.ts && rm tsconfig.json && touch .prettierrc && touch .gi
 # Replace the.gitignore file with:
 cache/
 out/
-
 !/broadcast
 /broadcast/*/31337/
 /broadcast/**/dry-run/
-
 docs/
-
 .env
-
 node_modules/
-
 
 # Add the following to the .gitmodules file to track git submodules (in our case, only the Forge standard library, forge-std):
 [submodule "packages/contracts/lib/forge-std"]
 	path = packages/contracts/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
 
- 
 # Navigate to the contracts subdirectory:
 cd packages/contracts
 
@@ -149,8 +135,7 @@ sforge test
 packages/contracts/script
 # and add code from Walnut.s.sol
 
-# Deploying the contract 
-# In a separate terminal window, run: 
+# For deploying the contract. In a separate terminal window, run: 
 sanvil
 
 # In packages/contracts , create a .env file and add the following to it:
