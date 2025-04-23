@@ -1,5 +1,9 @@
 # SeismicWalnutApp
 
+# This is not an official guide. It's a shortened guide for quickly getting started without unnecessary information. It's a shortened guide for quickly getting started without unnecessary information. The  full guide with all explanations is available here:
+https://docs.seismic.systems/onboarding/tutorial
+My X - https://x.com/maximkapk
+
 # Here are the steps how you can interact with Seismic technology on your computer, just follow steps and see how you slightly become a developer.
 
 # For local development you should have this things on your PC. sforge - testing, framework sanvil - local node, ssolc - compiler. Also, some things as Rust, Cargo, Brew, JQ and Bun have to be installed. 
@@ -99,24 +103,7 @@ mkdir -p src && mv -t src index.ts
 mkdir -p src && mv index.ts src/ 
 
 
-# Edit package.json 
-{
-    "name": "walnut-cli",
-    "license": "MIT License",
-    "type": "module",
-    "scripts": {
-        "dev": "bun run src/index.ts"
-    },
-    "dependencies": {
-        "dotenv": "^16.4.7",
-        "seismic-viem": "1.0.9",
-        "viem": "^2.22.3"
-    },
-    "devDependencies": {
-        "@types/node": "^22.7.6",
-        "typescript": "^5.6.3"
-    }
-}
+# Edit package.json with the code from package.json
 
 # Edit .gitignore
 node_modules
