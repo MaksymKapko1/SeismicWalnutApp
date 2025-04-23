@@ -30,7 +30,7 @@ sforge clean  # run in your project's contract directory
 https://marketplace.visualstudio.com/items?itemName=SeismicSys.seismic
 
 # Install bun 
-Max&Linux - curl -fsSL https://bun.sh/install | bash
+Mac&Linux - curl -fsSL https://bun.sh/install | bash
 Windows - powershell -c "irm bun.sh/install.ps1 | iex"
 
 # Check the version of sanvil, sforge and ssolc 
