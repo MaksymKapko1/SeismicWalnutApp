@@ -6,7 +6,8 @@ My X - https://x.com/maximkapk
 
 # Here are the steps how you can interact with Seismic technology on your computer, just follow steps and see how you slightly become a developer.
 
-# For local development you should have this things on your PC. sforge - testing, framework sanvil - local node, ssolc - compiler. Also, some things as Rust, Cargo, Brew, JQ and Bun have to be installed. 
+# For local development you should have this things on your PC. 
+# sforge - testing framework, sanvil - local node, ssolc - compiler. Also, some things as Rust, Cargo, Brew, JQ and Bun have to be installed. 
 
 # install rust and cargo.
 curl https://sh.rustup.rs -sSf | sh
@@ -101,7 +102,6 @@ bun init -y
 mkdir -p src && mv -t src index.ts 
 # For macOS
 mkdir -p src && mv index.ts src/ 
-
 
 # Edit package.json with the code from package.json
 
