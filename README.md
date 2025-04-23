@@ -60,27 +60,7 @@ bun init -y && rm index.ts && rm tsconfig.json && touch .prettierrc && touch .gi
   }
 }
 
-# Add the following to the .prettierrc file for consistent code formatting:
-{
-  "semi": false,
-  "tabWidth": 2,
-  "singleQuote": true,
-  "printWidth": 80,
-  "trailingComma": "es5",
-  "plugins": ["@trivago/prettier-plugin-sort-imports"],
-  "importOrder": [
-    "<TYPES>^(?!@)([^.].*$)</TYPES>",
-    "<TYPES>^@(.*)$</TYPES>",
-    "<TYPES>^[./]</TYPES>",
-    "^(?!@)([^.].*$)",
-    "^@(.*)$",
-    "^[./]"
-  ],
-  "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
-  "importOrderSeparation": true,
-  "importOrderSortSpecifiers": true
-}
-
+# Add the code from the .prettierrc to your .prettierrc file for consistent code formatting:
 
 # Replace the.gitignore file with:
 cache/
